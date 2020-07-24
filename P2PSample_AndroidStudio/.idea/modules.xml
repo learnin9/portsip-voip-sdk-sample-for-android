@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/P2PSample/P2PSample.iml" filepath="$PROJECT_DIR$/.idea/modules/P2PSample/P2PSample.iml" group="P2PSample_AndroidStudio/P2PSample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/P2PSample_AndroidStudio.iml" filepath="$PROJECT_DIR$/.idea/modules/P2PSample_AndroidStudio.iml" group="P2PSample_AndroidStudio" />
+    </modules>
+  </component>
+</project>

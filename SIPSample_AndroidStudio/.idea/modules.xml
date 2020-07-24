@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SIPSample/SIPSample.iml" filepath="$PROJECT_DIR$/SIPSample/SIPSample.iml" group="SIPSample_AndroidStudio/SIPSample" />
+      <module fileurl="file://$PROJECT_DIR$/SIPSample_AndroidStudio.iml" filepath="$PROJECT_DIR$/SIPSample_AndroidStudio.iml" group="SIPSample_AndroidStudio" />
+    </modules>
+  </component>
+</project>

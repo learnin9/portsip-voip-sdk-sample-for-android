@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PortSipSample</string>
+    <!-- Dangerous Permission -->
+    <!-- Title of a category of application permissioncds, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_microphone">Microphone</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_microphone">record audio</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_recordAudio">record audio</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_recordAudio">Allows the app to record audio with the
+      microphone.  This permission allows the app to record audio at any time
+without your confirmation.</string>
+
+    <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_camera">Camera</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_camera">take pictures and record video</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_camera">take pictures and videos</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_camera">Allows the app to take pictures and videos
+      with the camera.  This permission allows the app to use the camera at any
+      time without your confirmation.</string>
+
+    <string name="permissions_needed">Allows the app to record audio and use the camera</string>
+
+
+
+    <string name="str_login">Login</string>
+    <string name="str_numpad">NumPad</string>
+    <string name="str_video">Video</string>
+    <string name="str_message">Message</string>
+    <string name="str_setting">Setting</string>
+
+    <!-- login fragment -->
+    <string name="str_optional">Optional</string>
+    <string name="str_username">UserName</string>
+    <string name="str_displayname">DisplayName</string>
+    <string name="str_authName">AuthName</string>
+    <string name="str_password">Password</string>
+    <string name="str_userDomain">UserDomain</string>
+    <string name="str_requried">Required</string>
+    <string name="str_transport">Transport</string>
+    <string name="str_srtp">SRTP</string>
+
+    <string name="str_SIPServer">SIPServer</string>
+    <string name="str_SIPServerPort">SIPServerPort</string>
+    <string name="str_StunServer">StunServer</string>
+    <string name="str_StunServerPort">StunServerPort</string>
+    <string name="str_localSIPPort">LocalSIPPort</string>
+
+    <string-array name="transports">
+        <item >UDP</item>
+        <item >TLS</item>
+    	<item >TCP</item>
+        <item >PERS_UDP</item>
+        <item >PERS_TCP</item>
+    </string-array>
+
+  <string-array name="lines">
+    <item >Line-0</item>
+    <item >Line-1</item>
+    <item >Line-2</item>
+    <item >Line-3</item>
+    <item >Line-4</item>
+    <item >Line-5</item>
+    <item >Line-6</item>
+    <item >Line-7</item>
+  </string-array>
+  
+  <string-array name="srtp">
+    <item >None</item>
+    <item >Force</item>
+    <item >Prefer</item>
+  </string-array>
+
+
+    <string name="outboundServer">outboundServer</string>
+    <string name="outboundServerPort">outboundServerPort</string>
+    <string name="register">Login</string>
+    <string name="unregister">Logout</string>
+    <string name="registed">available</string>
+    <string name="not_reg">sign out</string>
+
+
+  <!--for NumPad  -->
+  <string name="str_videocall">VideoCall</string>
+  <string name="str_acceptvideo">AcceptVideo</string>
+  <string name="str_conference">Conference</string>
+  
+  <string name="str_dial">Dial</string>
+  <string name="str_vcall">Video Call</string>
+  <string name="str_acall">Audio Call</string>
+  <string name="str_del">Del</string>
+  <string name="str_hold">Hold</string>
+  <string name="str_unhold">UnHold</string>
+  <string name="str_reject">Reject</string>
+  <string name="str_att_transfer">Attend Transfer</string>
+  <string name="str_transfer">Transfer</string>
+
+    <string name="str_hangup">Hangup</string>
+    <string name="str_speakon">SpeakOn</string>
+    <string name="str_refer">Refer</string>
+    <string name="str_mute">Mute</string>
+    <string name="str_answer">Answer</string>
+
+  <!-- message -->
+  <string name="subscribe">Subscribe</string>
+  <string name="unsubscribe">Unsubscribe</string>
+  <string name="publish">Publish</string>
+  <string name="unpublish">Unpublish</string>
+  <string name="str_sendmsg">Send</string>
+  <string name="str_sendsdp">SendSDP</string>
+  <string name="str_confrence">Conference</string>
+  <string name="str_setstatus">Set</string>
+  <string name="str_status">Status :</string>
+  <string name="str_clear">Clear</string>
+  <string name="str_update">Subscribe</string>
+
+  <string name="str_accept">Accept</string>
+  <string name="str_refuse">Refuse</string>
+  
+  <string name="str_sendto">Send to:</string>
+
+  <string name="contact">Contact</string>
+  <string name="message">Message</string>
+  <string name="sipsample">SipSample</string>
+
+  <string name="online">Online</string>
+  <string name="offline">Offline</string>
+
+  <string name="website">website:http://www.portsip.com</string>
+  <string name="email">email:sales@portsip.com</string>
+
+
+
+  <string name="audio">Audio</string>
+  <string name="video">Video</string>
+
+  <!-- string name="str_status">Status :</string -->
+  <string name="str_tips">..</string>
+
+  <string name="line">line-</string>
+  
+  <!--for setting  -->
+  <string name="MEDIA_G722">MEDIA_G722</string>
+  <string name="MEDIA_G729">MEDIA_G729</string>
+  <string name="MEDIA_AMR">MEDIA_AMR</string>
+  <string name="MEDIA_AMRWB">MEDIA_AMRWB</string>
+  <string name="MEDIA_GSM">MEDIA_GSM</string>
+  <string name="MEDIA_PCMA">MEDIA_PCMA</string>
+  <string name="MEDIA_PCMU">MEDIA_PCMU</string>
+  <string name="MEDIA_SPEEX">MEDIA_SPEEX</string>
+  <string name="MEDIA_SPEEXWB">MEDIA_SPEEXWB</string>
+  <string name="MEDIA_ILBC">MEDIA_ILBC</string>
+  <string name="MEDIA_ISACWB">MEDIA_ISACWB</string>
+  <string name="MEDIA_ISACSWB">MEDIA_ISACSWB</string>
+  <string name="MEDIA_G7221">MEDIA_G7221</string>
+  <string name="MEDIA_OPUS">MEDIA_OPUS</string>
+  <string name="MEDIA_DTMF">MEDIA_DTMF</string>
+
+    <string name="string_audiofeature">Audio Feature</string>
+    <string name="MEDIA_VAD">MEDIA_VAD</string>
+    <string name="MEDIA_AEC">MEDIA_AEC</string>
+    <string name="MEDIA_ANS">MEDIA_ANS</string>
+    <string name="MEDIA_AGC">MEDIA_AGC</string>
+    <string name="MEDIA_CNG">MEDIA_CNG</string>
+
+
+    <string name="string_video">Video</string>
+    <string name="MEDIA_H264">MEDIA_H264</string>
+    <string name="MEDIA_VP8">MEDIA_VP8</string>
+    <string name="MEDIA_VP9">MEDIA_VP9</string>
+
+
+    <string name="str_resolution_title">Select a resolution</string>
+    <string name="str_resolution">Resolution</string>
+    <string name="str_resolution_default">CIF</string>
+    <string-array name="arr_resolution">
+        <item >QCIF</item>
+        <item >CIF</item>
+        <item >VGA</item>
+        <item >720P</item>
+        <item >1080P</item>
+    </string-array>
+
+    <string name="str_bitrate">Bitrate</string>
+
+    <string name="str_avpath">Audio and Vedio recording</string>
+    <string name="str_avpathtitle">Record file directory</string>
+    <string name="str_avpathkey">AVpath</string>
+
+    <string name="str_forward">Forward</string>
+    <string name="str_fwopentitle">Enable forward call</string>
+    <string name="str_fwopenkey">ForwardEnable</string>
+    <string name="str_fwtotitle">Forward call to:</string>
+    <string name="str_fwtokey">Forwardto</string>
+    <string name="str_fwbusytitle">Forward call when busy</string>
+    <string name="str_fwbusykey">ForwardBusy</string>
+
+    <string name="str_prack">PRACK</string>
+    <string name="str_pracktitle">Enable PRACK</string>
+
+</resources>

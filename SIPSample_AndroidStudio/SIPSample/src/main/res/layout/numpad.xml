@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="2dp">
+    <Spinner
+        android:id="@+id/sp_lines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_status"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/txtips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_tips"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/sendVideo"
+            style="@style/portcheckbox"
+            android:checked="true"
+            android:text="@string/str_videocall" />
+        <CheckBox
+            android:id="@+id/acceptVideo"
+            style="@style/portcheckbox"
+            android:checked="true"
+            android:text="@string/str_acceptvideo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/conference"
+            style="@style/portcheckbox"
+            android:text="@string/str_confrence" />
+        <CheckBox
+            android:id="@+id/sendSdp"
+            style="@style/portcheckbox"
+            android:checked="true"
+            android:text="@string/str_sendsdp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <EditText
+            android:id="@+id/etsipaddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+            <TableLayout
+                android:id="@+id/dtmf_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:visibility="invisible">
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="1" />
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="2" />
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="3" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="4" />
+                    <Button
+                        android:id="@+id/five"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="5" />
+                    <Button
+                        android:id="@+id/six"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="4dip"
+                        android:text="6" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/seven"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="7" />
+                    <Button
+                        android:id="@+id/eight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="8" />
+                    <Button
+                        android:id="@+id/nine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="9" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/star"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="*" />
+                    <Button
+                        android:id="@+id/zero"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="0" />
+                    <Button
+                        android:id="@+id/sharp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="#" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:id="@+id/function_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3">
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_answer" />
+                    <Button
+                        android:id="@+id/reject"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_reject" />
+                    <Button
+                        android:id="@+id/transfer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_transfer" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/hold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_hold" />
+                    <Button
+                        android:id="@+id/unhold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_unhold" />
+                    <Button
+                        android:id="@+id/attenttransfer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_att_transfer"
+                        android:textSize="12sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/mute"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_mute" />
+                    <Button
+                        android:id="@+id/hangup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_hangup" />
+                    <Button
+                        android:id="@+id/mic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_speakon" />
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/dial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/str_dial" />
+            <ImageButton
+                android:id="@+id/pad"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:src="@android:drawable/ic_dialog_dialer" />
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:paddingLeft="4dip"
+                android:src="@android:drawable/ic_input_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

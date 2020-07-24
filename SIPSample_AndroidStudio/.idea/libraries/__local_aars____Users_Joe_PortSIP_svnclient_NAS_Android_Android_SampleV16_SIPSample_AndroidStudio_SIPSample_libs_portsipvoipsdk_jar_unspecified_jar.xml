@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="__local_aars__:/Users/Joe/PortSIP/svnclient/NAS/Android/Android_SampleV16/SIPSample_AndroidStudio/SIPSample/libs/portsipvoipsdk.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SIPSample/libs/portsipvoipsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

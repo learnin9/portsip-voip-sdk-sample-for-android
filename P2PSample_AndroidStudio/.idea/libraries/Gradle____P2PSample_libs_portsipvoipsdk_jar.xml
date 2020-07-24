@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./P2PSample/libs/portsipvoipsdk.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/P2PSample/libs/portsipvoipsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/tab_login"
+            style="@style/radio_tab"
+            android:text="@string/str_login" />
+        <RadioButton
+            android:id="@+id/tab_numpad"
+            style="@style/radio_tab"
+            android:text="@string/str_numpad" />
+        <RadioButton
+            android:id="@+id/tab_video"
+            style="@style/radio_tab"
+            android:text="@string/str_video" />
+        <RadioButton
+            android:id="@+id/tab_message"
+            style="@style/radio_tab"
+            android:text="@string/str_message" />
+        <RadioButton
+            android:id="@+id/tab_setting"
+            style="@style/radio_tab"
+            android:text="@string/str_setting" />
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_menu" >
+
+        <fragment
+            android:name="com.portsip.sipsample.ui.MessageFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/message_fragment" />
+        <fragment
+            android:name="com.portsip.sipsample.ui.VideoFragment"
+            android:id="@+id/video_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/numpad_fragment"
+            android:name="com.portsip.sipsample.ui.NumpadFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <fragment
+            android:name="com.portsip.sipsample.ui.SettingFragment"
+            android:id="@+id/setting_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <fragment
+            android:name="com.portsip.sipsample.ui.LoginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/login_fragment" />
+    </FrameLayout>
+</RelativeLayout>

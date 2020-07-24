@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./SIPSample/libs/portsipvoipsdk.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SIPSample/libs/portsipvoipsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

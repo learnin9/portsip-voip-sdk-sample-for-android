@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+      <ImageButton
+          android:id="@+id/ibscale"
+          android:layout_marginTop="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/aspect_fit" />
+      <ImageButton
+          android:id="@+id/ibcamera"
+          android:layout_marginTop="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/switch_video" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llLocalView"
+        android:layout_height="88dp"
+        android:layout_width="72dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true">
+      <com.portsip.PortSIPVideoRenderer
+          android:id="@+id/local_video_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    </LinearLayout>
+    </RelativeLayout>
+  <LinearLayout
+      android:id="@+id/llRemoteView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical" >
+    <com.portsip.PortSIPVideoRenderer
+        android:id="@+id/remote_video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+</LinearLayout>

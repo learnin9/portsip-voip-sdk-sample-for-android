@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/audio">
+        <CheckBoxPreference
+            android:title="@string/MEDIA_G722"
+            android:key="@string/MEDIA_G722"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_G729"
+            android:key="@string/MEDIA_G729"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_AMR"
+            android:key="@string/MEDIA_AMR"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_AMRWB"
+            android:key="@string/MEDIA_AMRWB"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_GSM"
+            android:key="@string/MEDIA_GSM"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_PCMA"
+            android:key="@string/MEDIA_PCMA"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_PCMU"
+            android:key="@string/MEDIA_PCMU"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_SPEEX"
+            android:key="@string/MEDIA_SPEEX"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_SPEEXWB"
+            android:key="@string/MEDIA_SPEEXWB"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_ILBC"
+            android:key="@string/MEDIA_ILBC"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_G7221"
+            android:key="@string/MEDIA_G7221"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_ISACWB"
+            android:key="@string/MEDIA_ISACWB"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_ISACSWB"
+            android:key="@string/MEDIA_ISACSWB"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_OPUS"
+            android:key="@string/MEDIA_OPUS"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_DTMF"
+            android:key="@string/MEDIA_DTMF"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/string_audiofeature">
+        <CheckBoxPreference
+            android:title="@string/MEDIA_AEC"
+            android:key="@string/MEDIA_AEC"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_VAD"
+            android:key="@string/MEDIA_VAD"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_CNG"
+            android:key="@string/MEDIA_CNG"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_AGC"
+            android:key="@string/MEDIA_AGC"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_ANS"
+            android:key="@string/MEDIA_ANS"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/string_video">
+        <CheckBoxPreference
+            android:title="@string/MEDIA_H264"
+            android:key="@string/MEDIA_H264"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_VP8"
+            android:key="@string/MEDIA_VP8"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/MEDIA_VP9"
+            android:key="@string/MEDIA_VP9"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/str_resolution">
+        <ListPreference
+            android:title="@string/str_resolution_title"
+            android:key="@string/str_resolution"
+            android:entries="@array/arr_resolution"
+            android:entryValues="@array/arr_resolution"
+            android:defaultValue="@string/str_resolution_default" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/str_forward">
+        <CheckBoxPreference
+            android:title="@string/str_fwopentitle"
+            android:key="@string/str_fwopenkey"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:title="@string/str_fwbusytitle"
+            android:key="@string/str_fwbusykey"
+            android:dependency="@string/str_fwopenkey"
+            android:defaultValue="true" />
+        <EditTextPreference
+            android:title="@string/str_fwtotitle"
+            android:key="@string/str_fwtokey"
+            android:dependency="@string/str_fwopenkey" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/str_prack">
+        <CheckBoxPreference
+            android:title="@string/str_pracktitle"
+            android:key="@string/str_pracktitle"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

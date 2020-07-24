@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.portsip" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+	<!-- ====================================================================== -->
+	<!-- Permissions for accessing the device microphone                        -->
+	<!-- ====================================================================== -->
+	<eat-comment />
+
+	<!-- Used for permissions that are associated with accessing
+         microphone audio from the device. Note that phone calls also capture audio
+         but are in a separate (more visible) permission group. -->
+	<permission-group android:name="android.permission-group.MICROPHONE"
+		android:icon="@drawable/perm_group_microphone"
+		android:label="@string/permgrouplab_microphone"
+		android:description="@string/permgroupdesc_microphone"
+		android:priority="600" />
+
+	<!-- Allows an application to record audio.
+         <p>Protection level: dangerous
+    -->
+	<permission android:name="android.permission.RECORD_AUDIO"
+		android:permissionGroup="android.permission-group.MICROPHONE"
+		android:label="@string/permlab_recordAudio"
+		android:description="@string/permdesc_recordAudio"
+		android:protectionLevel="dangerous"/>
+
+    <!-- ====================================================================== -->
+    <!-- Permissions for accessing the device camera                            -->
+    <!-- ====================================================================== -->
+    <eat-comment />
+
+    <!-- Used for permissions that are associated with accessing
+     camera or capturing images/video from the device. -->
+    <permission-group android:name="android.permission-group.CAMERA"
+        android:icon="@drawable/perm_group_camera"
+        android:label="@string/permgrouplab_camera"
+        android:description="@string/permgroupdesc_camera"
+        android:priority="700" />
+
+    <!-- Required to be able to access the camera device.
+         <p>This will automatically enforce the <a
+         href="{@docRoot}guide/topics/manifest/uses-feature-element.html">
+         <uses-feature>}</a> manifest element for <em>all</em> camera features.
+         If you do not require all camera features or can properly operate if a camera
+         is not available, then you must modify your manifest as appropriate in order to
+         install on devices that don't support all camera features.</p>
+         <p>Protection level: dangerous
+    -->
+    <permission android:name="android.permission.CAMERA"
+        android:permissionGroup="android.permission-group.CAMERA"
+        android:label="@string/permlab_camera"
+        android:description="@string/permdesc_camera"
+        android:protectionLevel="dangerous" />
+
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+	<uses-feature android:name="android.hardware.camera.full" android:required="false" />
+	<uses-feature android:name="android.hardware.telephony" android:required="false" />
+	
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:name=".sipsample.ui.MyApplication"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        
+        <activity android:name=".sipsample.ui.MainActivity" android:launchMode="singleInstance" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".sipsample.ui.IncomingActivity" android:launchMode="singleInstance" android:noHistory="true"/>
+        <service android:name=".sipsample.service.PortSipService"></service>
+		<!-- [START firebase_service] -->
+		<service
+			android:name=".sipsample.service.MyFirebaseMessagingService">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+		<!-- [END firebase_service] -->
+    </application>    
+
+</manifest>
